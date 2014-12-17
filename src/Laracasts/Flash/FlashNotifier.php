@@ -21,7 +21,7 @@ class FlashNotifier {
      */
     public function info($message)
     {
-        $this->message($message, 'info');
+        $this->message('<i class="fa-fw fa fa-info"></i>'.$message, 'info');
     }
 
     /**
@@ -30,7 +30,7 @@ class FlashNotifier {
      */
     public function success($message)
     {
-        $this->message($message, 'success');
+        $this->message('<i class="fa-fw fa fa-check"></i>'.$message, 'success');
     }
 
     /**
@@ -39,7 +39,7 @@ class FlashNotifier {
      */
     public function error($message)
     {
-        $this->message($message, 'danger');
+        $this->message('<i class="fa-fw fa fa-times"></i>'.$message, 'danger');
     }
 
     /**
@@ -48,7 +48,7 @@ class FlashNotifier {
      */
     public function warning($message)
     {
-        $this->message($message, 'warning');
+        $this->message('<i class="fa-fw fa fa-warning"></i>'.$message, 'warning');
     }
 
     /**
